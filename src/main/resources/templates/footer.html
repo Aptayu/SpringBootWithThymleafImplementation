@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Footer template</title>
+</head>
+<body>
+	<footer id="fragment" th:fragment="footer1(title,subtitle)">
+		<div class = "container" >
+		<h1 th:text="${title}"></h1>
+		<h1 th:text="${subtitle}"></h1>
+		<h1>I am a footer</h1>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

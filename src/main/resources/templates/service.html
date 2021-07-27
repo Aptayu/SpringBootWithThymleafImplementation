@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		
+		<!--Bring footer here you can view the diffence in code (inspect) -->	
+		<!-- Replace -->
+		<footer id="service" th:replace="footer::footer1(${title},${subtitle})">
+		
+		</footer>
+		<!--Insert  -->
+		<footer id="service" th:insert="footer::footer1('This is insert title','This is subtitle')" >
+		
+		</footer>
+		<!-- Include -->
+		<footer id="service" th:include="footer::footer1('This is include title','This is subtitle')" >
+		
+		</footer>
+</body>
+</html>
